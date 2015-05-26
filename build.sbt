@@ -12,6 +12,6 @@ scalacOptions ++= Seq("-feature")
 parallelExecution in Test := false
 
 libraryDependencies ++= Seq(
-  "com.github.xuwei-k" %% "scalaprops" % "0.1.4" % "test"
+  "com.github.scalaprops" %% "scalaprops" % "0.1.5" % "test"
 )
 
