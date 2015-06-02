@@ -4,6 +4,8 @@ package examples
 import scalaprops._
 import scalaz._
 
+// port from https://github.com/rickynils/scalacheck/wiki/User-Guide
+
 object GenExample extends Scalaprops {
 
   val genSmallInt = Gen.choose(0, 100)

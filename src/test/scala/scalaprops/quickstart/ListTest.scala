@@ -3,6 +3,8 @@ package quickstart
 
 import scalaprops._
 
+// port from http://www.scalacheck.org/
+
 object ListTest extends Scalaprops {
 
   val revAndRevIsOriginal =

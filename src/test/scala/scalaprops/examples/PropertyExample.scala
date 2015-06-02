@@ -4,6 +4,8 @@ package examples
 import scalaprops._
 import Property.{property, implies, prop}
 
+// port from https://github.com/rickynils/scalacheck/wiki/User-Guide
+
 object PropertyExample extends Scalaprops {
 
   val makeList = property { n: Int =>

@@ -6,6 +6,8 @@ import Gen._
 import scalaz._
 import scalaz.std.stream._
 
+// port from https://github.com/rickynils/scalacheck/wiki/User-Guide
+
 object ShrinkExample extends Scalaprops {
 
   def shrinkTuple2[T1, T2](implicit T1: Shrink[T1], T2: Shrink[T2]): Shrink[(T1, T2)] =
