@@ -7,4 +7,4 @@ scalacOptions ++= Seq("-feature")
 fullResolvers ~= {_.filterNot(_.name == "jcenter")}
 
 scalapropsSettings
-scalapropsVersion := "0.1.15"
+scalapropsVersion := "0.2.1"
