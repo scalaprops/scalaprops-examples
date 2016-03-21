@@ -1,1 +1,1 @@
-addSbtPlugin("com.github.scalaprops" % "sbt-scalaprops" % "0.1.0")
+addSbtPlugin("com.github.scalaprops" % "sbt-scalaprops" % "0.1.1")
