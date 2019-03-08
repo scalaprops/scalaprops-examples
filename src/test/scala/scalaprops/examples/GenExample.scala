@@ -2,7 +2,6 @@ package scalaprops
 package examples
 
 import scalaprops._
-import scalaz._
 
 // port from https://github.com/rickynils/scalacheck/wiki/User-Guide
 
@@ -41,7 +40,7 @@ object GenExample extends Scalaprops {
 
   def genTree[A: Gen]: Gen[Tree[A]] = Gen.oneOf(genLeaf, genNode)
 
-  def matrix[T](g: Gen[T]): Gen[IList[IList[T]]] = Gen.sized { size =>
+  def matrix[T](g: Gen[T]): Gen[List[List[T]]] = Gen.sized { size =>
     val side = scala.math.sqrt(size).asInstanceOf[Int]
     Gen.listOf(Gen.listOf(g, side), side)
   }
