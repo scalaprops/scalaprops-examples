@@ -1,6 +1,6 @@
 scalaVersion := "2.12.18"
 
-crossScalaVersions := Seq("2.12.18", "2.13.12", "3.3.1")
+crossScalaVersions := Seq("2.12.18", "2.13.12", "3.3.2")
 
 scalacOptions ++= Seq("-feature")
 
