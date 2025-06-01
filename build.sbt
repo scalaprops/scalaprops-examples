@@ -5,4 +5,4 @@ crossScalaVersions := Seq("2.12.20", "2.13.16", "3.7.0")
 scalacOptions ++= Seq("-feature")
 
 scalapropsSettings
-scalapropsVersion := "0.9.1"
+scalapropsVersion := "0.10.0"
