@@ -16,7 +16,7 @@ object GenExample extends Scalaprops {
     m <- Gen.choose(2 * n, 500)
   } yield (n, m)
 
-  val oneOfChar = Gen.oneOf(Gen.value('A'), List('E', 'I', 'O', 'U', 'Y').map(Gen.value(_)) :_*)
+  val oneOfChar = Gen.oneOf(Gen.value('A'), List('E', 'I', 'O', 'U', 'Y').map(Gen.value(_))*)
   val freqChar = Gen.frequency(
     (3, Gen.value('A')),
     (4, Gen.value('E')),
