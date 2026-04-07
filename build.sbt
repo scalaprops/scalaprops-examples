@@ -14,4 +14,4 @@ scalacOptions ++= {
 }
 
 scalapropsSettings
-scalapropsVersion := "0.10.0"
+scalapropsVersion := "0.10.1"
