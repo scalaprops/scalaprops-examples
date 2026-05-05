@@ -15,3 +15,7 @@ scalacOptions ++= {
 
 scalapropsSettings
 scalapropsVersion := "0.10.1"
+
+InputKey[Unit]("showLockFile") := {
+  println(IO.read(file("deps.lock")))
+}
