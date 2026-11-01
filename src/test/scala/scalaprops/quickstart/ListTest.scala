@@ -7,13 +7,13 @@ import scalaprops._
 
 object ListTest extends Scalaprops {
 
-  val revAndRevIsOriginal =
+  property("revAndRevIsOriginal") =
     Property.forAll { (xs: List[Int]) => xs.reverse.reverse == xs }
 
-  val revIsOriginal =
+  property("revIsOriginal") =
     Property.forAll { (xs: List[Int]) => xs.reverse == xs }
 
-  val empty =
+  property("empty") =
     Property.forAll { (xs: List[Int]) => xs.isEmpty }
       .ignore("ignore a test")
 }

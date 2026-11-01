@@ -9,7 +9,7 @@ object GenExample extends Scalaprops {
 
   val genSmallInt = Gen.choose(0, 100)
 
-  val smallInt = Property.forAllG(genSmallInt)((n: Int) => n >= 0 && n <= 100)
+  property("smallInt") = Property.forAllG(genSmallInt)((n: Int) => n >= 0 && n <= 100)
 
   val myGen = for {
     n <- Gen.choose(10, 20)
